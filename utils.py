@@ -375,7 +375,7 @@ async def get_shortlink(link):
     params = {'api': URL_SHORTNER_WEBSITE_API,
               'url': link,
               }
-
+    link = link.replace("t.me","telegram.dog")
     try:
         async with aiohttp.ClientSession() as session:
             async with session.get(url, params=params, raise_for_status=True, ssl=False) as response:
@@ -384,8 +384,8 @@ async def get_shortlink(link):
                     return data['shortenedUrl']
                 else:
                     logger.error(f"Error: {data['message']}")
-                    return f'https://{URL_SHORTENR_WEBSITE}/st?api={URL_SHORTNER_WEBSITE_API}&url={link.replace("t.me","telegram.dog")}'
+                    return f'https://{URL_SHORTENR_WEBSITE}/st?api={URL_SHORTNER_WEBSITE_API}&url={link}'
 
     except Exception as e:
         logger.error(e)
-        return f'{URL_SHORTENR_WEBSITE}/st?api={URL_SHORTNER_WEBSITE_API}&url={link.replace("t.me","telegram.dog")}'
+        return f'{URL_SHORTENR_WEBSITE}/st?api={URL_SHORTNER_WEBSITE_API}&url={link}'
