@@ -86,6 +86,6 @@ DOWNLOAD_TEXT_URL = "https://t.me/FF_Help/5"
 
    # Custom Caption Under Button #
 CAPTION_BUTTON = "Subscribe"
-CAPTION_BUTTON_URL = "https://t.me/Film_Freakers"
+CAPTION_BUTTON_URL = "https://t.me/Film_Freakers/"
 
    # Auto Delete For Bot Sending Files #
