@@ -75,14 +75,14 @@ URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'urlshortx.com')
 URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '')
 
      # Auto Delete For Group Message (Self Delete) #
-SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 60))
+SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 120))
 SELF_DELETE = environ.get('SELF_DELETE', True)
 if SELF_DELETE == "True":
     SELF_DELETE = True
 
     # Download Tutorial Button #
 DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
-DOWNLOAD_TEXT_URL = "https://t.me/FF_Help/8"
+DOWNLOAD_TEXT_URL = "https://t.me/FF_Help/10"
 
    # Custom Caption Under Button #
 CAPTION_BUTTON = "Subscribe"
